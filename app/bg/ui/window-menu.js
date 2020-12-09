@@ -844,7 +844,7 @@ export function buildWindowMenu (opts = {}) {
  
 
   // assemble final menu
-  var menus = [fileMenu, editMenu, viewMenu,  historyMenu, developerMenu, windowMenu, helpMenu, driveMenu]
+  var menus = [/*fileMenu, editMenu, viewMenu,  historyMenu, developerMenu, windowMenu, helpMenu, driveMenu*/]
   if (process.platform === 'darwin') menus.unshift(darwinMenu)
   return menus
 }
