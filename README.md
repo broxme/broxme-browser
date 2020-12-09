@@ -20,13 +20,12 @@ Please feel free to open usability issues.
   - [Binaries](#binaries)
   - [Building from source](#building-from-source)
 - [Documentation](#documentation)
-  - [Env Vars](#env-vars)
+  
 - [Vulnerability disclosure](#vulnerability-disclosure)
 - [Known issues](#known-issues)
   - [tmux](#tmux)
 - [Contributors](#contributors)
-  - [Backers](#backers)
-  - [Sponsors](#sponsors)
+
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -97,7 +96,7 @@ Launching from tmux is known to cause issues with GUI apps in macOS. On Broxme b
 ## Contributors
 
 This project based on backer and thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
-[![](https://opencollective.com/beaker/contributors.svg?width=890)](https://github.com/beakerbrowser/beaker/graphs/contributors)
+
 
 ## License
 
