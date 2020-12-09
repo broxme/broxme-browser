@@ -1,33 +1,14 @@
-Beaker Browser
+Broxme Browser
 ======
-[![Backers on Open Collective](https://opencollective.com/beaker/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/beaker/sponsors/badge.svg)](#sponsors)
+
 
 ![logo.png](build/icons/256x256.png)
 
-Beaker is an experimental peer-to-peer Web browser. It adds new APIs for building hostless applications while remaining compatible with the rest of the Web. [Visit the website.](https://beakerbrowser.com/)
+Broxme is an light weight and peer-to-peer Web browser with build in adblocker. It adds new APIs for building hostless applications while remaining compatible with the rest of the Web. 
 
-Please feel free to open usability issues. Join us at #beakerbrowser on Freenode.
+Please feel free to open usability issues.
 
-### Sponsors
 
-Sponsors support this project by contributing $100 a month or more. [Become a sponsor](https://opencollective.com/beaker#sponsor)
-
-<a href="https://opencollective.com/beaker/sponsor/0/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/1/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/2/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/3/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/4/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/5/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/6/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/7/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/8/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/9/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/9/avatar.svg"></a>
-
-### Backers
-
-Backers support this project by contributing $2 to $99 a month. [Become a backer](https://opencollective.com/beaker#backer)
-
-<a href="https://opencollective.com/beaker#backers" target="_blank"><img src="https://opencollective.com/beaker/backers.svg?width=890"></a>
 
 ## Table of Contents
 
@@ -54,7 +35,7 @@ Backers support this project by contributing $2 to $99 a month. [Become a backer
 
 ### Binaries
 
-**Visit the [Releases Page](https://github.com/beakerbrowser/beaker/releases) to find the installer you need.**
+**Visit the [Releases Page](https://github.com/broxme/broxme-browser/releases) to find the installer you need.**
 
 ### Building from source
 
@@ -80,7 +61,7 @@ npm install -g gulp
 To build:
 
 ```bash
-git clone https://github.com/beakerbrowser/beaker.git
+git clone https://github.com/broxme/broxme-browser.git
 cd beaker/scripts
 npm install # don't worry about v8 api errors building native modules - rebuild will fix
 npm run rebuild # needed after each install. see https://github.com/electron/electron/issues/5851
@@ -99,11 +80,11 @@ This invokes [the mad king](http://nerdist.com/wp-content/uploads/2016/05/the-ma
 
 If you're doing development, `npm run watch` to have assets build automatically.
 
-## [Documentation](https://docs.beakerbrowser.com)
+## [Documentation](https://www.broxme.com)
 
 ### Env Vars
 
-- `DEBUG`: which log systems to output? A comma-separated string. Can be `beaker`, `dat`, `bittorrent-dht`, `dns-discovery`, `hypercore-protocol`. Specify `*` for all.
+- `DEBUG`: which log systems to output? A comma-separated string. Can be `broxme`, `dat`, `bittorrent-dht`, `dns-discovery`, `hypercore-protocol`. Specify `*` for all.
 - `BEAKER_OPEN_URL`: open the given URL on load, rather than the previous session or default tab.
 - `BEAKER_USER_DATA_PATH`: override the user-data path, therefore changing where data is read/written. Useful for testing. For default value see `userData` in the [electron docs](https://electron.atom.io/docs/api/app/#appgetpathname).
 - `BEAKER_DAT_QUOTA_DEFAULT_BYTES_ALLOWED`: override the default max-quota for bytes allowed to be written by a dat site. Useful for testing. Default value is `'500mb'`. This can be a Number or a String. Check [bytes.parse](https://github.com/visionmedia/bytes.js/tree/a4b9af2bf289175f12b3538eb172f2489844b1ec#bytesparsestringnumber-value-numbernull) for supported units and abbreviations.
@@ -127,7 +108,7 @@ This project exists thanks to all the people who contribute. [[Contribute]](CONT
 
 MIT License (MIT)
 
-Copyright (c) 2018 Blue Link Labs
+Copyright (c) 2020 BroxMe Technology
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
