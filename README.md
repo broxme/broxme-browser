@@ -2,7 +2,7 @@ Broxme Browser
 ======
 
 
-![logo.png](browser-main.png)
+![logo.png](build/browser-main.png)
 
 Broxme is an light weight and peer-to-peer Web browser with build in adblocker. It adds new APIs for building hostless applications while remaining compatible with the rest of the Web. 
 
