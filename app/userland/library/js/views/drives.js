@@ -99,7 +99,7 @@ export class DrivesView extends LitElement {
         click: () => this.driveProps(drive)
       },
       {
-        label: drive.info.writable ? 'Remove from My Library' : 'Stop hosting',
+        label: drive.info.writable ? 'Remove from Library' : 'Stop hosting',
         disabled: drive.ident.internal,
         click: () => this.removeDrive(drive)
       }
@@ -164,7 +164,7 @@ export class DrivesView extends LitElement {
             this.filter ? html`
               <div class="empty"><div>No matches found for "${this.filter}".</div></div>
             ` : html`
-              <div class="empty"><span class="fas fa-sitemap"></span><div>You have not created any Hyperdrives.</div></div>
+              <div class="empty"><span class="fas fa-sitemap"></span><div>You have not created any drives.</div></div>
             `
           : ''}
         </div>
