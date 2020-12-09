@@ -49,7 +49,7 @@ sudo dnf install libtool m4 make gcc-c++ libXScrnSaver  # fedora
 brew install libtool autoconf automake # macos
 ```
 
-In Windows, you'll need to install [Python 2.7](https://www.python.org/downloads/release/python-2711/), Visual Studio 2015 or 2017, and [Git](https://git-scm.com/download/win). (You might try [windows-build-tools](https://www.npmjs.com/package/windows-build-tools).) Then run:
+In Windows, you'll need to install [Python 2.7](https://www.python.org/downloads/release/python-2711/), Visual Studio 2015 or 2017 or 2019 , and [Git](https://git-scm.com/download/win). (You might try [windows-build-tools](https://www.npmjs.com/package/windows-build-tools).) Then run:
 
 ```powershell
 npm config set python c:/python27
@@ -82,12 +82,7 @@ If you're doing development, `npm run watch` to have assets build automatically.
 
 ## [Documentation](https://www.broxme.com)
 
-### Env Vars
 
-- `DEBUG`: which log systems to output? A comma-separated string. Can be `broxme`, `dat`, `bittorrent-dht`, `dns-discovery`, `hypercore-protocol`. Specify `*` for all.
-- `BEAKER_OPEN_URL`: open the given URL on load, rather than the previous session or default tab.
-- `BEAKER_USER_DATA_PATH`: override the user-data path, therefore changing where data is read/written. Useful for testing. For default value see `userData` in the [electron docs](https://electron.atom.io/docs/api/app/#appgetpathname).
-- `BEAKER_DAT_QUOTA_DEFAULT_BYTES_ALLOWED`: override the default max-quota for bytes allowed to be written by a dat site. Useful for testing. Default value is `'500mb'`. This can be a Number or a String. Check [bytes.parse](https://github.com/visionmedia/bytes.js/tree/a4b9af2bf289175f12b3538eb172f2489844b1ec#bytesparsestringnumber-value-numbernull) for supported units and abbreviations.
 
 ## Vulnerability disclosure
 
@@ -97,11 +92,11 @@ See [SECURITY.md](./SECURITY.md) for reporting security issues and vulnerabiliti
 
 ### tmux
 
-Launching from tmux is known to cause issues with GUI apps in macOS. On Beaker, it may cause the application to hang during startup.
+Launching from tmux is known to cause issues with GUI apps in macOS. On Broxme browser, it may cause the application to hang during startup.
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
+This project based on backer and thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
 [![](https://opencollective.com/beaker/contributors.svg?width=890)](https://github.com/beakerbrowser/beaker/graphs/contributors)
 
 ## License
