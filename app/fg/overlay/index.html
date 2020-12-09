@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: none;
+        font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Ubuntu, Cantarell, "Oxygen Sans", "Helvetica Neue", sans-serif;
+        font-size: 12px;
+        overflow: hidden;
+      }
+      #text {
+        position: relative;
+        white-space: pre;
+        margin-top: 1px;
+        box-sizing: border-box;
+        padding: 4px 8px 4px;
+        height: calc(100% - 6px);
+        color: #555;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        letter-spacing: 0.5px;
+        background: #fff;
+      }
+      #text.left-arrow {
+        overflow: visible;
+        margin-left: 5px;
+      }
+      #text.left-arrow::before {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: 8px;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        transform: rotate(45deg);
+        border-left: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+        z-index: 1;
+      }
+      #text.top-arrow {
+        overflow: visible;
+        margin-top: 5px;
+      }
+      #text.top-arrow::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: calc(50% - 4px);
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        transform: rotate(45deg);
+        border-left: 1px solid #bbb;
+        border-top: 1px solid #bbb;
+        z-index: 1;
+      }
+      #text.multi-line {
+        overflow: visible;
+        white-space: initial;
+      }
+      #text.centered {
+        text-align: center;
+      }
+    </style>
+    <script>
+      window.set = opts => {
+        if (opts?.leftArrow) text.classList.add('left-arrow')
+        else text.classList.remove('left-arrow')
+        if (opts?.topArrow) text.classList.add('top-arrow')
+        else text.classList.remove('top-arrow')
+        if (opts?.centered) text.classList.add('centered')
+        else text.classList.remove('centered')
+        if (opts?.multiLine) text.classList.add('multi-line')
+        else text.classList.remove('multi-line')
+        if (opts?.value) {
+          text.innerHTML = opts.value
+          document.body.style.display = 'block'
+        } else {
+          text.innerHTML = ''
+          document.body.style.display = 'none'
+        }
+      }
+    </script>
+  </head>
+  <body><div id="text"></div></body>
+</html>

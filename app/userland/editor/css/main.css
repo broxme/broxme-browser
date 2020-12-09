@@ -1,0 +1,10 @@
+@import "broxme://app-stdlib/css/common.css";
+@import "broxme://assets/font-awesome.css";
+
+body {
+  --default: #eee;
+  --background: #333;
+
+  font-size: 12px;
+  background: var(--background);
+}

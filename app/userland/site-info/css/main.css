@@ -1,0 +1,42 @@
+@import "broxme://app-stdlib/css/common.css";
+@import "broxme://assets/font-awesome.css";
+
+body {
+  --bg-color--main: #fff;
+  --bg-color--light: #f8f8fa;
+  --bg-color--nav--selected: #f0f0f4;
+  --text-color--default: #333;
+  --text-color--link: blue;
+  --text-color--verifier: #889;
+  --border-color--default: #ccc;
+  --border-color--main: #bbb;
+  --border-color--forks: #dde;
+  --box-shadow-color--main: rgba(0,0,0,.1);
+
+  margin: 0;
+  background: transparent;
+  font-size: 12px;
+  overflow: hidden;
+  color: var(--text-color--default);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg-color--main: #333;
+    --bg-color--light: #444;
+    --bg-color--nav--selected: #444;
+    --text-color--default: #ccc;
+    --text-color--link: #888;
+    --text-color--verifier: #888;
+    --border-color--default: #666;
+    --border-color--main: #555;
+    --border-color--forks: #555;
+    --box-shadow-color--main: rgba(0,0,0,.3);
+  }
+}
+
+beaker-toast {
+  --toast-min-width: 150px;
+  --toast-padding: 5px 10px;
+  --toast-font-size: 13px;
+}
