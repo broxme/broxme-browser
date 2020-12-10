@@ -1,10 +1,10 @@
-Broxme Browser
+Broxme Browser A Hackable Peer To Peer Web Browser
 ======
 
 
 ![logo.png](build/browser-main.PNG)
 
-Broxme is an light weight and peer-to-peer Web browser with build in adblocker. It adds new APIs for building hostless applications while remaining compatible with the rest of the Web. 
+Broxme is a hackable peer-to-peer Web browser with build in adblocker. It adds new APIs for building hostless applications while remaining compatible with the rest of the Web. 
 
 Please feel free to open usability issues.
 
