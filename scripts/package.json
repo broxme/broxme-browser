@@ -1,5 +1,8 @@
 {
   "name": "broxmebrowser",
+   "nsis": {
+    "include": "build/installer.nsh"
+  },
   "devDependencies": {
     "browserify": "^16.0.0",
     "electron": "11.0.3",
@@ -66,6 +69,35 @@
         ]
       }
     ],
+	"linux": {
+    "category": "Network",
+    "target": [
+      {
+        "target": "AppImage",
+        "arch":  "x64"
+      },
+      {
+        "target": "deb",
+        "arch": "x64"
+      },
+	  {
+        "target": "rpm",
+        "arch": "x64"
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis-web",
+        "arch": "x64"
+      },
+      {
+        "target": "nsis",
+        "arch": "x64"
+      }
+    ]
+  },
     "appImage": {
       "category": "Network",
       "desktop": {
