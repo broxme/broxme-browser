@@ -33,8 +33,12 @@ Please feel free to open usability issues.
 ## Installing
 
 ### Binaries
+Download our latest release and you're off to the races!
 
-**Visit the [Releases Page](https://github.com/broxme/broxme-browser/releases) to find the installer you need.**
+| Windows | macOS | GNU/Linux (64-bit only) |
+| -- | -- | -- |
+| [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-setup-1.0.0-alpha.exe) | [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-1.0.0-alpha.dmg) | [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser_1.0.0-alpha_amd64.deb) | | [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-1.0.0-alpha.x86_64.rpm) |
+**Visit the [Releases Page](https://github.com/broxme/broxme-browser/releases) to find the others package you need.**
 
 ### Building from source
 
@@ -61,7 +65,7 @@ To build:
 
 ```bash
 git clone https://github.com/broxme/broxme-browser.git
-cd beaker/scripts
+cd broxme-browser/scripts
 npm install # don't worry about v8 api errors building native modules - rebuild will fix
 npm run rebuild # needed after each install. see https://github.com/electron/electron/issues/5851
 npm start
