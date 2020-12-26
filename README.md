@@ -35,9 +35,9 @@ Please feel free to open usability issues.
 ### Binaries
 Download our latest release and you're off to the races!
 
-| Windows | macOS | GNU/Linux (64-bit only) |
-| -- | -- | -- |
-| [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-setup-1.0.0-alpha.exe) | [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-1.0.0-alpha.dmg) | [Download .deb](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser_1.0.0-alpha_amd64.deb) [Download .rpm](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-1.0.0-alpha.x86_64.rpm) |
+| Windows | macOS | GNU/Linux .DEB(64-bit only) | GNU/Linux .RPM(64-bit only) |
+| -- | -- | -- | -- |
+| [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-setup-1.0.0-alpha.exe) | [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-1.0.0-alpha.dmg) | [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser_1.0.0-alpha_amd64.deb) | [Download](https://github.com/broxme/broxme-browser/releases/download/v1.0.0-alpha/broxme-browser-1.0.0-alpha.x86_64.rpm) |
 **Visit the [Releases Page](https://github.com/broxme/broxme-browser/releases) to find the others package you need.**
 
 ### Building from source
